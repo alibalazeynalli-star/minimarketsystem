@@ -1,0 +1,19 @@
+SSENARİ 1: UĞURLU ALIŞ VƏ CHECKOUT (8 ADDIM)
+1. Proqram başladıldı.
+2. İstifadəçi adı: student1, Şifrə: 1234 daxil edildi. [LOGIN_SUCCESS]
+3. Menyudan "1. Kateqoriyalar" seçildi.
+4. "Geyimlər" -> "T-Shirt" (12.50 AZN) seçildi.
+5. Miqdar olaraq "2" daxil edildi.
+6. Əməliyyat: "B" (Səbətə əlavə et) seçildi. Balans dəyişmədi (100 AZN).
+7. Menyudan "2. Səbətim" -> "checkout" əmri daxil edildi.
+8. Sistem: "Alış uğurludur! Yeni balans: 75.0 AZN" mesajı verdi. [CHECKOUT_SUCCESS]
+
+SSENARİ 2: SƏHV GİRİŞ VƏ BLOKLANMA (COOLDOWN)
+1. İstifadəçi adı: student1 daxil edildi.
+2. Səhv şifrə daxil edildi (Cəhd 1/3).
+3. Səhv şifrə daxil edildi (Cəhd 2/3).
+4. Səhv şifrə daxil edildi (Cəhd 3/3).
+5. Sistem: "3 səhv! 10 saniyə bloklandınız." mesajını və geri sayımı göstərdi.
+6. 10 saniyə gözlənildi.
+7. Yenidən giriş cəhdində doğru şifrə (1234) daxil edildi.
+8. Sistem: "Xoş gəldiniz!" mesajı ilə əsas menyunu açdı. [LOGIN_SUCCESS]
